@@ -27,6 +27,11 @@
             "ref": "game",
             "projects": [
                 {
+                    "name": "Stack - prototype",
+                    "img_url": "asset/img/stack.png",
+                    "link_url": "https://monolithe.itch.io/stack?secret=bDBmfp7glHO0mT8WjLxk1DhnNA"
+                },
+                {
                     "name": "Arcadie - prototype",
                     "img_url": "asset/img/arcadie.png",
                     "link_url": "https://monolithe.itch.io/arcadie"
