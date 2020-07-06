@@ -1,0 +1,37 @@
+{
+    "categories": [
+        {
+            "name": "Web Development",
+            "ref": "web_development",
+            "projects": [
+                {
+                    "name": "Audio Player",
+                    "img_url": "asset/img/audio_player.png",
+                    "link_url": "https://landrieux.needemand.com/development/audio_player/"
+                }
+            ]
+        },
+        {
+            "name": "Application",
+            "ref": "application",
+            "projects": [
+                {
+                    "name": "Nestix",
+                    "img_url": "asset/img/nestix.png",
+                    "link_url": "https://landrieux.needemand.com/nestix/nestix/public/index.php"
+                }
+            ]
+        },
+        {
+            "name": "Game",
+            "ref": "game",
+            "projects": [
+                {
+                    "name": "Arcadie - prototype",
+                    "img_url": "asset/img/arcadie.png",
+                    "link_url": "https://monolithe.itch.io/arcadie"
+                }
+            ]
+        }
+    ]
+}

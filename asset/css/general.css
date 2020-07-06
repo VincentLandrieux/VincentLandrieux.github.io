@@ -1,0 +1,111 @@
+/*---Fonts---*/
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto/Roboto-Light.ttf") format("truetype");
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Cormorant";
+    src: url("../font/Cormorant/Cormorant-Bold.ttf") format("truetype");
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Cormorant";
+    src: url("../font/Cormorant/Cormorant-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Cormorant";
+    src: url("../font/Cormorant/Cormorant-Light.ttf") format("truetype");
+    font-weight: 200;
+}
+
+/*Variables*/
+:root {
+    --main-color: #0D0D0D; /*#1A1A1A*/
+    --second-color: #F2F2F2;
+    --third-color: #B59411;
+
+    --border: 6px;
+    --border-padding: 38px;
+
+    --github: url('asset/img/logo_github.png');
+    --linkedin: url('asset/img/logo_linkedin.png');
+}
+
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    padding: var(--border);
+    font-size: 20px;
+
+    scroll-behavior: smooth;
+}
+
+p, a, h1, h2, h3, h4, h5, h6{
+    color: var(--second-color);
+    font-family: "Roboto";
+}
+
+a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover{
+    color: var(--third-color);
+    /* filter: opacity(50%); */
+}
+
+/*---header---*/
+header{
+    width: 100%;
+}
+header nav{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header nav .logo a{
+    font-weight: 200;
+}
+
+/*---footer---*/
+footer{
+    width: 100%;
+
+    /* border: 1px dashed blue; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer .links a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+
+    background-size: cover;
+}
