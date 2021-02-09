@@ -4,6 +4,12 @@ html{
     min-width: 400px;
     min-height: 350px;
     background-color: var(--second-color);
+
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar{
+    width: 0;
 }
 
 li{
