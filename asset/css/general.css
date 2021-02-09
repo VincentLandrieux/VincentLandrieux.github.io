@@ -72,6 +72,14 @@ a:hover{
     /* filter: opacity(50%); */
 }
 
+animate-btn{
+    --first-color: var(--third-color);
+    --ripple-color: var(--second-color);
+    --text-color: var(--main-color);
+    --font-family: "Roboto";
+    --font-weight: 800;
+}
+
 /*---header---*/
 header{
     width: 100%;

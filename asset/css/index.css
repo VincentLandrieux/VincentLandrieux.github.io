@@ -23,41 +23,32 @@ body{
 /*---main---*/
 main{
     width: 100%;
-    transform: translateY(-25%);
-
-    /* border: 1px dashed blue; */
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 main .title{
     margin-left: 8%;
 }
 main .title h2{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 200;
     font-family: Cormorant;
+    overflow: hidden;
 }
 main .title h1{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 800;
+    overflow: hidden;
 }
 
-/*---footer---*/
-/* footer{
-    width: 100%;
-
-    border: 1px dashed blue;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-}
-
-footer .links a{
+.splitting_letter{
     display: inline-block;
-    width: 32px;
-    height: 32px;
-    margin-right: 20px;
+    transform: translateY(100%);
+}
 
-    background-size: cover;
-} */
+.cta{
+    margin-left: 8%;
+}
