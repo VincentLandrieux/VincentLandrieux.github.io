@@ -1,0 +1,73 @@
+/*General*/
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    padding: var(--border-html);
+    font-size: 20px;
+    color: var(--second-color);
+    font-family: "Roboto";
+
+    scroll-behavior: smooth;
+}
+
+a{
+    color: var(--second-color);
+    text-decoration: none;
+    font-weight: bolder;
+    transition: .2s color;
+}
+
+a:hover{
+    color: var(--third-color);
+}
+
+animate-btn{
+    --first-color: var(--third-color);
+    --ripple-color: var(--second-color);
+    --text-color: var(--main-color);
+    --font-family: "Roboto";
+    --font-weight: 800;
+}
+
+/*---header---*/
+header{
+    width: 100%;
+}
+header nav{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+header nav .logo a{
+    font-weight: 200;
+}
+
+/*---footer---*/
+footer{
+    width: 100%;
+
+    /* border: 1px dashed blue; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+footer .links a{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}

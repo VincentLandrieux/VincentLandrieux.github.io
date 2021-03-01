@@ -17,8 +17,8 @@
             "projects": [
                 {
                     "name": "Nestix",
-                    "img_url": "asset/img/nestix.png",
-                    "link_url": "https://landrieux.needemand.com/nestix/nestix/public/index.php"
+                    "img_url": "asset/img/projects/nestix/nestix.png",
+                    "link_url": "./nestix.html"
                 }
             ]
         },

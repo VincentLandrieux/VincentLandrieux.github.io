@@ -1,0 +1,20 @@
+/*Variables*/
+:root {
+    --main-color: #0D0D0D;
+    --second-color: #F2F2F2;
+    --third-color: #B59411;
+    --quad-color: #222;
+
+    --border-html: 6px;
+    --border-padding: 38px;
+    --content-padding: 8%;
+
+    --github: url('asset/img/logo_github.png');
+    --linkedin: url('asset/img/logo_linkedin.png');
+    --cv: url('asset/img/logo_cv.png');
+
+    --mobile-breakpoint: 600px;
+    --medium-breakpoint: 900px;
+    --desktop-breakpoint: 1200px;
+    --large-breakpoint: 1800px;
+}
