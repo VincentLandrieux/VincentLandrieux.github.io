@@ -24,7 +24,7 @@ function createHeader(){
         work.classList.add("work");
             let workLink = document.createElement("a");
             workLink.href = "work.html";
-            workLink.innerHTML = "Work";
+            workLink.innerHTML = "Projets";
             work.appendChild(workLink);
         nav.appendChild(work);
     header.appendChild(nav);
@@ -47,7 +47,7 @@ function createFooter(){
     let contact = document.createElement("div");
     contact.classList.add("contact");
         let contactLink = document.createElement("a");
-        contactLink.href = "contact.html";
+        contactLink.href = "./contact.html";
         contactLink.innerHTML = "Contact";
         contact.appendChild(contactLink);
     footer.appendChild(contact);

@@ -19,9 +19,6 @@ body{
     height: 100%;
     padding: var(--border-padding);
 
-    /* background-color: var(--second-color); */
-    /* border: 2px solid var(--second-color); */
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -37,15 +34,13 @@ header{
 main{
     width: 100%;
     transform: translateY(-10%);
-
-    /* border: 1px dashed blue; */
 }
 
 main .title{
     margin: 0 8%;
     padding: 20px;
 
-    border: 1px solid var(--second-color);
+    border-left: 1px solid var(--second-color);
     overflow: hidden;
 }
 main .title div{
