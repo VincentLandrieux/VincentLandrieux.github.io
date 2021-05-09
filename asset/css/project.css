@@ -34,6 +34,13 @@ body{
     background-color: var(--second-color);
     color: var(--main-color);
 }
+.alt-color a{
+    color: var(--main-color);
+    font-weight: 400;
+}
+.alt-color a:hover{
+    color: var(--third-color);
+}
 
 /*---header---*/
 header{

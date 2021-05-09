@@ -1,6 +1,26 @@
 var header;
 var footer;
 
+try{
+    const host = document.documentURI;
+    const domain = document.domain;
+    const i = host.indexOf(domain);
+    const url = host.slice(i+domain.length);
+
+    const data = {
+        host: domain,
+        url
+    };
+
+    fetch("https://log-api.vercel.app/api/log", 
+        {
+            method: 'POST',
+            body: JSON.stringify(data)
+        });
+}catch(error){
+    console.log(error);
+}
+
 window.onload = () => {
     header = document.querySelector("header");
     footer = document.querySelector("footer");
