@@ -1,0 +1,111 @@
+/*---General---*/
+html{
+    min-width: 400px;
+    min-height: 100vh;
+    background-color: var(--second-color);
+
+    scrollbar-width: none;
+}
+::-webkit-scrollbar{
+    width: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    padding: var(--border-padding);
+    overflow-x: hidden;
+
+    background-color: var(--main-color);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*---main---*/
+main{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.description{
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 3rem;
+    text-transform: uppercase;
+}
+.big-text{
+    font-size: 4rem;
+    line-height: 5rem;
+}
+.highlight{
+    -webkit-text-stroke: 1px var(--second-color);
+    text-stroke: 1px var(--second-color);
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    color: transparent;
+
+    position: relative;
+    cursor: none;
+}
+.big-text .highlight{
+    -webkit-text-stroke: 2px var(--second-color);
+    text-stroke: 2px var(--second-color);
+}
+
+.splitting_word, .splitting_separator{
+    display: inline-block;
+    opacity: 0;
+}
+
+/*---reveal---*/
+.reveal-hide{
+    opacity: 0!important;
+    transform: translateY(40px)!important;
+}
+.reveal-visible{
+    transition: .6s cubic-bezier(.5, 0, 0, 1);
+}
+
+/*---hover image---*/
+.hover-reveal {
+    position: absolute;
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
+    /* transition: transform .2s; */
+}
+
+.hover-reveal__inner {
+    overflow: hidden;
+}
+
+.hover-reveal__inner,
+.hover-reveal__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.hover-reveal__img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+/*---cta---*/
+.cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 42px 0;
+}
