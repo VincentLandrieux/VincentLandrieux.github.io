@@ -1,32 +1,48 @@
 {
     "categories": [
         {
-            "name": "Web Development",
-            "ref": "web_development",
+            "name": "Web Application",
+            "ref": "web_application",
             "projects": [
                 {
                     "name": "Nestix",
                     "img_url": "asset/img/projects/nestix/nestix.png",
                     "link_url": "./nestix.html"
-                },
-                {
-                    "name": "Audio Player",
-                    "img_url": "asset/img/audio_player.png",
-                    "link_url": "https://vincentlandrieux.github.io/Audio_Player/"
                 }
             ]
         },
         {
-            "name": "Game",
-            "ref": "game",
+            "name": "Landing Page",
+            "ref": "landing_page",
             "projects": [
                 {
-                    "name": "Stack - prototype",
+                    "name": "Insure",
+                    "img_url": "asset/img/insure.png",
+                    "link_url": "https://github.com/VincentLandrieux/insure"
+                },
+                {
+                    "name": "Typemaster",
+                    "img_url": "asset/img/typemaster.png",
+                    "link_url": "https://github.com/VincentLandrieux/typemaster"
+                }
+            ]
+        },
+        {
+            "name": "Creative",
+            "ref": "creative",
+            "projects": [
+                {
+                    "name": "Audio Player",
+                    "img_url": "asset/img/audio_player.png",
+                    "link_url": "https://vincentlandrieux.github.io/Audio_Player/"
+                },
+                {
+                    "name": "Stack - game prototype",
                     "img_url": "asset/img/stack.png",
                     "link_url": "https://monolithe.itch.io/stack?secret=bDBmfp7glHO0mT8WjLxk1DhnNA"
                 },
                 {
-                    "name": "Arcadie - prototype",
+                    "name": "Arcadie - game prototype",
                     "img_url": "asset/img/arcadie.png",
                     "link_url": "https://monolithe.itch.io/arcadie"
                 }
