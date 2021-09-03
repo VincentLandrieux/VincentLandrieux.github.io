@@ -1,0 +1,97 @@
+@media (min-width: $break-mobile) {
+
+    .flag{
+        top: -5.2rem;
+    }
+
+    header{
+        height: 5.2rem;
+    }
+
+    .nav-bar{
+        padding: $padding-mobile $padding-tablet;
+
+        &_logo{
+            width: 2rem;
+            height: 2rem;
+        }
+
+        &_links-container:not(.mobile){
+            display: block;
+        }
+
+        &_menu{
+            &.mobile{
+                display: none;
+            }
+        }
+    }
+
+    .hero{
+        padding: 4rem $padding-tablet;
+    }
+
+    .contact{
+        padding: 0 $padding-tablet $padding-mobile;
+    }
+
+    .projets{
+        &_nav{
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: $padding-mobile;
+
+            &_link{
+                &:not(:nth-child(1)){
+                    margin-top: 0;
+                    margin-left: 1rem;
+                }
+            }
+        }
+
+        &_container{
+            grid-template-columns: 1fr 1fr;
+            grid-gap: .8rem;
+        }
+    }
+
+    .description{
+        padding: $padding-mobile $padding-tablet;
+    }
+
+    .footer{
+        &_container{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &_contact{
+            padding: $padding-mobile $padding-tablet;
+        }
+
+        &_link-container{
+            padding: $padding-mobile $padding-tablet;
+        }
+
+        &_legal{
+            flex-direction: row;
+            padding: $padding-mobile $padding-tablet;
+        }
+    }
+}
+
+@media (min-width: $break-tablet) {
+    html{
+        font-size: $font-medium-desktop;
+    }
+
+    .flag{
+        top: -4.56rem;
+    }
+
+    header{
+        height: 4.56rem;
+    }
+}

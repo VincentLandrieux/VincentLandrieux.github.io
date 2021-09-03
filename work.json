@@ -1,0 +1,52 @@
+{
+    "categories": [
+        {
+            "name": "Web Application",
+            "ref": "web_application",
+            "projects": [
+                {
+                    "name": "Nestix",
+                    "img_url": "./images/works/nestix.png",
+                    "link_url": "./nestix.html"
+                }
+            ]
+        },
+        {
+            "name": "Landing Page",
+            "ref": "landing_page",
+            "projects": [
+                {
+                    "name": "Typemaster",
+                    "img_url": "./images/works/typemaster.png",
+                    "link_url": "https://github.com/VincentLandrieux/typemaster"
+                },
+                {
+                    "name": "Insure",
+                    "img_url": "./images/works//insure.png",
+                    "link_url": "https://github.com/VincentLandrieux/insure"
+                }
+            ]
+        },
+        {
+            "name": "Creative",
+            "ref": "creative",
+            "projects": [
+                {
+                    "name": "Audio Player",
+                    "img_url": "./images/works//audio_player.png",
+                    "link_url": "https://vincentlandrieux.github.io/Audio_Player/"
+                },
+                {
+                    "name": "Stack - game prototype",
+                    "img_url": "./images/works//stack.png",
+                    "link_url": "https://monolithe.itch.io/stack?secret=bDBmfp7glHO0mT8WjLxk1DhnNA"
+                },
+                {
+                    "name": "Arcadie - game prototype",
+                    "img_url": "./images/works//arcadie.png",
+                    "link_url": "https://monolithe.itch.io/arcadie"
+                }
+            ]
+        }
+    ]
+}
