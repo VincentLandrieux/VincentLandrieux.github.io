@@ -1,0 +1,109 @@
+@use "generals/fonts" as *;
+@use "generals/variables" as *;
+@use "generals/general" as *;
+
+.alt-color{
+    background-color: $color-black;
+    color: $color-white;
+}
+.alt-color a{
+    color: $color-white;
+}
+.alt-color a:hover{
+    color: $color-third;
+}
+
+/*---Main---*/
+
+.preview{
+    position: relative;
+    height: 100vh;
+    min-height: 384px;
+    background-color: $color-light;
+    overflow: hidden;
+
+    &_bg{
+        --overflow: 10%;
+        position: absolute;
+        width: 100%;
+        height: calc(100% + (2 * var(--overflow)));
+        top: calc(-1 * var(--overflow));
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        will-change: transform;
+    }
+}
+
+.description{
+    padding: (2 * $padding-mobile) $padding-mobile;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: $color-black;
+    color: $color-white;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+
+    &_text{
+        padding-bottom: 2rem;
+        font-weight: 300;
+    }
+
+    &_links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        :not(:first-child){
+            margin-top: $padding-mobile;
+        }
+    }
+}
+
+.splitshow{
+    padding: (2 * $padding-mobile) $padding-mobile;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &_col{
+        flex: 1;
+    }
+
+    &_item{
+        margin-bottom: $padding-mobile;
+
+        &_paragraph{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            &_title{
+                margin-bottom: .8rem;
+                font-size: 1.25rem;
+                font-weight: 300;
+                line-height: 1.8rem;
+                width: 100%;
+                text-align: center;
+            }
+
+            &_subtitle{
+                font-size: 0.8rem;
+            }
+        }
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+
+@import "./generals/general_responsive";
+@import "./work/work_responsive";

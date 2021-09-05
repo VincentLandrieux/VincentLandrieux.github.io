@@ -1,103 +1,10 @@
 
-import AnimateBtn from './animateBtn.js';
+import projets from './src/scripts/projets.js'
+import nav from './src/scripts/nav.js'
 
-// Work
-let xhr = new XMLHttpRequest();
-let url = "./work.json";
 
-const work = document.querySelector(".projets");
-const navWork = document.querySelector(".projets_nav");
+// Projects
+projets();
 
-try{
-    xhr.addEventListener('load', () => {
-        let response = JSON.parse(xhr.response);
-
-        response.categories.forEach((item) => {
-            addNavItem(item.name, item.ref);
-            createSection(item);
-        });
-    });
-
-    xhr.open("GET", url);
-    xhr.send();
-}catch(error){
-    console.log(error);
-}
-
-function addNavItem(name, ref){
-    let a = document.createElement("a");
-    a.classList.add("projets_nav_link");
-    a.href = "#"+ref;
-    a.innerHTML = name;
-    navWork.appendChild(a);
-}
-function createSection(category){
-    let catName = document.createElement("div");
-    catName.classList.add("projets_category");
-        let flag = document.createElement("div");
-        flag.id = category.ref;
-        flag.classList.add("flag");
-        catName.appendChild(flag);
-
-        let catTitle = document.createElement("p");
-        catTitle.classList.add("projets_category_name");
-        catTitle.innerHTML = category.name;
-        catName.appendChild(catTitle);
-
-        let catNumber = document.createElement("p");
-        catNumber.classList.add("projets_category_nb");
-        catNumber.innerHTML = "0"+category.projects.length;
-        catName.appendChild(catNumber);
-    work.appendChild(catName);
-
-    let content = document.createElement("div");
-    content.classList.add("projets_container");
-
-        category.projects.forEach((item) => {
-            let box = document.createElement("a");
-            box.classList.add("projets_card");
-            box.href = item.link_url;
-            box.style.backgroundImage = "url('"+item.img_url+"')";
-                let title = document.createElement("p");
-                title.classList.add("projets_card_title");
-                title.innerHTML = item.name;
-                box.appendChild(title);
-            content.appendChild(box);
-        });
-    work.appendChild(content);
-}
-
-// Animated button
-customElements.define('animate-btn', AnimateBtn);
-
-// Nav and Menu
-const menuBtn = document.querySelector(".nav-bar_menu");
-const navMenu = document.querySelector(".nav-menu");
-const links = document.querySelectorAll(".nav-menu_link");
-const barLinks = document.querySelectorAll(".nav-bar_link");
-
-menuBtn.addEventListener("click", () => {
-    menuBtn.classList.toggle("opened");
-    navMenu.classList.toggle("opened");
-});
-
-links.forEach((link) => {
-    link.addEventListener("click", (e) => {
-        links.forEach((link) => {
-            link.classList.remove("select");
-        });
-
-        e.target.classList.add("select");
-        menuBtn.classList.toggle("opened");
-        navMenu.classList.toggle("opened");
-    });
-});
-barLinks.forEach((link) => {
-    link.addEventListener("click", (e) => {
-        barLinks.forEach((link) => {
-            link.classList.remove("select");
-        });
-
-        e.target.classList.add("select");
-    });
-});
+// Nav
+nav();

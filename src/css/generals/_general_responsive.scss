@@ -1,5 +1,4 @@
 @media (min-width: $break-mobile) {
-
     .flag{
         top: -5.2rem;
     }
@@ -31,40 +30,13 @@
         padding: 4rem $padding-tablet;
     }
 
-    .contact{
-        padding: 0 $padding-tablet $padding-mobile;
-    }
-
-    .projets{
-        &_nav{
-            flex-direction: row;
-            align-items: center;
-            margin-bottom: $padding-mobile;
-
-            &_link{
-                &:not(:nth-child(1)){
-                    margin-top: 0;
-                    margin-left: 1rem;
-                }
-            }
-        }
-
-        &_container{
-            grid-template-columns: 1fr 1fr;
-            grid-gap: .8rem;
-        }
-    }
-
-    .description{
-        padding: $padding-mobile $padding-tablet;
-    }
-
     .footer{
         &_container{
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
+            margin-bottom: $padding-mobile;
         }
 
         &_contact{

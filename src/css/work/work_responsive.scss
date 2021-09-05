@@ -1,0 +1,29 @@
+@media (min-width: $break-mobile) {
+
+    .description{
+        padding-left: $padding-tablet;
+        padding-right: $padding-tablet;
+
+        &_links{
+            align-items: flex-start;
+        }
+    }
+
+    .splitshow{
+        padding-left: $padding-tablet;
+        padding-right: $padding-tablet;
+        flex-direction: row;        
+        justify-content: center;
+        align-items: flex-start;
+
+        &_col-left{
+            margin-right: $padding-mobile / 2;
+        }
+        &_col-right{
+            margin-left: $padding-mobile / 2;
+        }
+        &_col-down{
+            margin-top: 2 * $padding-mobile;
+        }
+    }
+}
