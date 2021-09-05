@@ -1,10 +1,2 @@
-
-import projets from './src/scripts/projets.js'
-import nav from './src/scripts/nav.js'
-
-
-// Projects
-projets();
-
-// Nav
-nav();
+(()=>{var v=()=>{let n=new XMLHttpRequest,l="./projets.json",a=document.querySelector(".projets"),d=document.querySelector(".projets_nav");try{n.addEventListener("load",()=>{JSON.parse(n.response).categories.forEach(t=>{r(t.name,t.ref),c(t)})}),n.open("GET",l),n.send()}catch(e){console.log(e)}function r(e,t){let s=document.createElement("a");s.classList.add("projets_nav_link"),s.href="#"+t,s.innerHTML=e,d.appendChild(s)}function c(e){let t=document.createElement("div");t.classList.add("projets_category");let s=document.createElement("div");s.id=e.ref,s.classList.add("flag"),t.appendChild(s);let i=document.createElement("p");i.classList.add("projets_category_name"),i.innerHTML=e.name,t.appendChild(i);let p=document.createElement("p");p.classList.add("projets_category_nb"),p.innerHTML="0"+e.projects.length,t.appendChild(p),a.appendChild(t);let m=document.createElement("div");m.classList.add("projets_container"),e.projects.forEach(u=>{let o=document.createElement("a");o.classList.add("projets_card"),o.href=u.link_url,o.style.backgroundImage="url('"+u.img_url+"')";let L=document.createElement("p");L.classList.add("projets_card_title"),L.innerHTML=u.name,o.appendChild(L),m.appendChild(o)}),a.appendChild(m)}};var h=()=>{let n=document.querySelector(".nav-bar_menu"),l=document.querySelector(".nav-menu"),a=document.querySelectorAll(".nav-menu_link"),d=document.querySelectorAll(".nav-bar_link");n.addEventListener("click",()=>{n.classList.toggle("opened"),l.classList.toggle("opened")}),a.forEach(r=>{r.addEventListener("click",c=>{a.forEach(e=>{e.classList.remove("select")}),c.target.classList.add("select"),n.classList.toggle("opened"),l.classList.toggle("opened")})}),d.forEach(r=>{r.addEventListener("click",c=>{d.forEach(e=>{e.classList.remove("select")}),c.target.classList.add("select")})})};v();h();})();
+//# sourceMappingURL=script.js.map

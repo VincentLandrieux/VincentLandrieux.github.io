@@ -1,3 +1,6 @@
+@use "../generals/variables" as *;
+@use "sass:math";
+
 @media (min-width: $break-mobile) {
 
     .description{
@@ -17,10 +20,10 @@
         align-items: flex-start;
 
         &_col-left{
-            margin-right: $padding-mobile / 2;
+            margin-right: math.div($padding-mobile, 2);
         }
         &_col-right{
-            margin-left: $padding-mobile / 2;
+            margin-left: math.div($padding-mobile, 2);
         }
         &_col-down{
             margin-top: 2 * $padding-mobile;
