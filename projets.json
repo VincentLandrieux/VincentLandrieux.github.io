@@ -22,7 +22,7 @@
                 },
                 {
                     "name": "Insure",
-                    "img_url": "./images/works//insure.png",
+                    "img_url": "./images/works/insure.png",
                     "link_url": "https://github.com/VincentLandrieux/insure"
                 }
             ]
@@ -33,17 +33,22 @@
             "projects": [
                 {
                     "name": "Audio Player",
-                    "img_url": "./images/works//audio_player.png",
+                    "img_url": "./images/works/audio_player.png",
                     "link_url": "https://vincentlandrieux.github.io/Audio_Player/"
                 },
                 {
+                    "name": "Lab",
+                    "img_url": "./images/works/lab.png",
+                    "link_url": "https://vincentlandrieux.github.io/lab/"
+                },
+                {
                     "name": "Stack - game prototype",
-                    "img_url": "./images/works//stack.png",
+                    "img_url": "./images/works/stack.png",
                     "link_url": "https://monolithe.itch.io/stack?secret=bDBmfp7glHO0mT8WjLxk1DhnNA"
                 },
                 {
                     "name": "Arcadie - game prototype",
-                    "img_url": "./images/works//arcadie.png",
+                    "img_url": "./images/works/arcadie.png",
                     "link_url": "https://monolithe.itch.io/arcadie"
                 }
             ]
