@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Fragments - Vincent Landrieux</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <link rel="stylesheet" type="text/css" href="work.css">
+
+    <script src="work.js" type="module" defer></script>
+</head>
+<body>
+    <header id="accueil">
+        <nav class="nav-bar">
+            <img class="nav-bar_logo" src="./images/logo.png" alt="Portfolio">
+            <div class="nav-bar_links-container">
+                <a class="nav-bar_link" href="/#accueil">Accueil</a>
+                <a class="nav-bar_link select" href="/#projets">Projets</a>
+                <a class="nav-bar_link" href="/#description">A propos</a>
+                <a class="nav-bar_link" href="#contact">Contact</a>
+            </div>
+            <div class="nav-bar_menu mobile"></div>
+        </nav>
+        <div class="nav-menu mobile">
+            <a class="nav-menu_link" href="/#accueil">Accueil</a>
+            <a class="nav-menu_link select" href="/#projets">Projets</a>
+            <a class="nav-menu_link" href="/#description">A propos</a>
+            <a class="nav-menu_link" href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h1 class="hero_title">Fragments</h1>
+            <h2 class="hero_subtitle">Boutique en ligne</h2>
+        </div>
+
+        <div class="preview parallax-img">
+            <div class="preview_bg parallax-img_bg" style="background-image: url('./images/works/fragments/preview.png')"></div>
+        </div>
+
+        <div class="description">
+            <p class="description_text">
+                Site e-commerce développée avec symfony
+            </p>
+            <div class="description_links">
+                <animate-btn href="https://github.com/VincentLandrieux/Fragments">Voir le dépôt Git</animate-btn>
+            </div>
+        </div>
+
+        <div class="splitshow">
+            <div class="splitshow_col splitshow_col-left">
+                <div class="splitshow_item">
+                    <div class="splitshow_item_paragraph">
+                        <p class="splitshow_item_paragraph_title">Langages</p>
+                        <p>PHP</p>
+                        <p>Javascript</p>
+                    </div>
+                </div>
+                <div class="splitshow_item">
+                    <div class="splitshow_item_paragraph">
+                        <p class="splitshow_item_paragraph_title">Technologies</p>
+                        <p>Symfony</p>
+                        <p>MySQL</p>
+                    </div>
+                </div>
+            </div>
+            <div class="splitshow_col splitshow_col-right">
+                <div class="splitshow_item">
+                    <div class="splitshow_item_paragraph">
+                        <p class="splitshow_item_paragraph_title">Eléments</p>
+                        <p>Client web</p>
+                        <p>Back office</p>
+                        <p>Base de données</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="splitshow alt-color">
+            <div class="splitshow_col splitshow_col-left">
+                <div class="splitshow_item">
+                    <div class="splitshow_item_paragraph">
+                        <p class="splitshow_item_paragraph_title">Boutique</p>
+                    </div>
+                    <img src="./images/works/fragments/index.png" alt="">
+                    <div class="splitshow_item_paragraph">
+                        <p class="splitshow_item_paragraph_subtitle">Accueil</p>
+                    </div>
+                </div>
+                <div class="splitshow_item">
+                    <img src="./images/works/fragments/index_order.png" alt="">
+                    <div class="splitshow_item_paragraph">
+                        <p class="splitshow_item_paragraph_subtitle">Panier</p>
+                    </div>
+                </div>
+            </div>
+            <div class="splitshow_col splitshow_col-right splitshow_col-down">
+                <div class="splitshow_item">
+                    <div class="splitshow_item_paragraph">
+                        <p class="splitshow_item_paragraph_title">Design</p>
+                    </div>
+                    <img src="./images/works/fragments/graphic-design.png" alt="">
+                    <div class="splitshow_item_paragraph">
+                        <p class="splitshow_item_paragraph_subtitle">Charte graphique</p>
+                    </div>
+                </div>
+                <div class="splitshow_item">
+                    <div class="splitshow_item_paragraph">
+                        <p class="splitshow_item_paragraph_title">Back office</p>
+                    </div>
+                    <img src="./images/works/fragments/back-office.png" alt="">
+                    <div class="splitshow_item_paragraph">
+                        <p class="splitshow_item_paragraph_subtitle">Liste des produits</p>
+                    </div>
+                </div>
+                <div class="splitshow_item">
+                    <img src="./images/works/fragments/back-office_edit.png" alt="">
+                    <div class="splitshow_item_paragraph">
+                        <p class="splitshow_item_paragraph_subtitle">Edition d'un produit</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div id="contact" class="flag"></div>
+        <div class="footer_container">
+            <div class="footer_contact">
+                <div class="footer_contact_info">
+                    <p class="footer_contact_info_label">Email</p>
+                    <a href="mailto:vincent.landrieux@gmail.com">vincent.landrieux@gmail.com</a>
+                </div>
+                <div class="footer_contact_info">
+                    <p class="footer_contact_info_label">Adresse</p>
+                    <p>Montpellier, France</p>
+                </div>
+            </div>
+            <div class="footer_link-container">
+                <a href="https://github.com/VincentLandrieux/" class="footer_link" target="_blank" style="--img-url: url(./images/shared/logo_github_black.png)"></a>
+                <a href="https://fr.linkedin.com/in/vincent-landrieux" class="footer_link" target="_blank" style="--img-url: url(./images/shared/logo_linkedin_black.png)"></a>
+            </div>
+        </div>
+        <div class="footer_legal">
+            <div class="footer_legal_logo"></div>
+            <p><span>2021&nbsp;</span>| Vincent Landrieux</p>
+        </div>
+    </footer>
+</body>
+</html>
