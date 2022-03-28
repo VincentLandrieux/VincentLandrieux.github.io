@@ -46,13 +46,13 @@ animate-btn{
 
 .flag{
     position: absolute;
-    top: -4.8rem;
+    top: -3.2rem;
 }
 
 /*---Header---*/
 header{
     position: relative;
-    height: 4.8rem;
+    height: 3.2rem;
 }
 .nav-bar{
     display: flex;
@@ -62,7 +62,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
-    padding: $padding-mobile;
+    padding: 16px $padding-mobile;
     z-index: 100;
     background-color: $color-light;
 

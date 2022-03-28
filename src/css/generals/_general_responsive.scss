@@ -1,14 +1,14 @@
 @media (min-width: $break-mobile) {
     .flag{
-        top: -5.2rem;
+        top: -4.4rem;
     }
 
     header{
-        height: 5.2rem;
+        height: 4.4rem;
     }
 
     .nav-bar{
-        padding: $padding-mobile $padding-tablet;
+        padding: 24px $padding-tablet;
 
         &_logo{
             width: 2rem;
@@ -60,10 +60,10 @@
     }
 
     .flag{
-        top: -4.56rem;
+        top: -3.9rem;
     }
 
     header{
-        height: 4.56rem;
+        height: 3.9rem;
     }
 }

@@ -96,13 +96,13 @@ animate-btn {
 
 .flag {
   position: absolute;
-  top: -4.8rem;
+  top: -3.2rem;
 }
 
 /*---Header---*/
 header {
   position: relative;
-  height: 4.8rem;
+  height: 3.2rem;
 }
 
 .nav-bar {
@@ -113,7 +113,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 32px;
+  padding: 16px 32px;
   z-index: 100;
   background-color: #F2F2F2;
 }
@@ -378,15 +378,15 @@ footer {
 
 @media (min-width: 642px) {
   .flag {
-    top: -5.2rem;
+    top: -4.4rem;
   }
 
   header {
-    height: 5.2rem;
+    height: 4.4rem;
   }
 
   .nav-bar {
-    padding: 32px 48px;
+    padding: 24px 48px;
   }
   .nav-bar_logo {
     width: 2rem;
@@ -427,11 +427,11 @@ footer {
   }
 
   .flag {
-    top: -4.56rem;
+    top: -3.9rem;
   }
 
   header {
-    height: 4.56rem;
+    height: 3.9rem;
   }
 }
 @media (min-width: 642px) {
