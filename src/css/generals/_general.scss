@@ -65,6 +65,11 @@ header{
     padding: 16px $padding-mobile;
     z-index: 100;
     background-color: $color-light;
+    transition: top .4s;
+
+    &.hidden{
+        top: -100%;
+    }
 
     &_logo{
         width: 1.6rem;

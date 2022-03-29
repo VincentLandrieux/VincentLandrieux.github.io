@@ -116,6 +116,10 @@ header {
   padding: 16px 32px;
   z-index: 100;
   background-color: #F2F2F2;
+  transition: top 0.4s;
+}
+.nav-bar.hidden {
+  top: -100%;
 }
 .nav-bar_logo {
   width: 1.6rem;

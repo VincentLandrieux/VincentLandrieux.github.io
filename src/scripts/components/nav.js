@@ -31,3 +31,36 @@ export default () => {
         });
     });
 }
+
+// nav-bar hidden on scroll up
+const navBar = document.querySelector(".nav-bar");
+
+let lastScroll = 0;
+let scroll = 0;
+
+let ticking = false;
+
+function changeNavBarHidden(scroll) {
+    const navBarHeight = navBar.clientHeight;
+
+    if(scroll > lastScroll && !(scroll <= navBarHeight)){
+        navBar.classList.add("hidden");
+    } else {
+        navBar.classList.remove("hidden");
+    }
+}
+
+window.addEventListener('scroll', function(e) {
+    scroll = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (!ticking) {
+        window.requestAnimationFrame(function() {
+            changeNavBarHidden(scroll);
+
+            lastScroll = scroll <= 0 ? 0 : scroll;
+            ticking = false;
+        });
+    }
+
+    ticking = true;
+});
