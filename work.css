@@ -50,7 +50,9 @@
   src: url(./fonts/Spectral/Spectral-BoldItalic.ttf);
   font-weight: 700;
 }
-*, ::before, ::after {
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -116,10 +118,10 @@ header {
   padding: 16px 32px;
   z-index: 100;
   background-color: #F2F2F2;
-  transition: top 0.4s;
+  transition: transform 0.4s;
 }
 .nav-bar.hidden {
-  top: -100%;
+  transform: translateY(-100%);
 }
 .nav-bar_logo {
   width: 1.6rem;

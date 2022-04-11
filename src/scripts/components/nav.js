@@ -1,3 +1,5 @@
+let menuOpened = false;
+
 export default () => {
     // Nav and Menu
     const menuBtn = document.querySelector(".nav-bar_menu");
@@ -8,6 +10,8 @@ export default () => {
     menuBtn.addEventListener("click", () => {
         menuBtn.classList.toggle("opened");
         navMenu.classList.toggle("opened");
+
+        menuOpened = !menuOpened;
     });
 
     links.forEach((link) => {
@@ -19,6 +23,8 @@ export default () => {
             e.target.classList.add("select");
             menuBtn.classList.toggle("opened");
             navMenu.classList.toggle("opened");
+
+            menuOpened = !menuOpened;
         });
     });
     barLinks.forEach((link) => {
@@ -41,11 +47,18 @@ let scroll = 0;
 let ticking = false;
 
 function changeNavBarHidden(scroll) {
-    const navBarHeight = navBar.clientHeight;
+    const navBarFlag = window.innerHeight / 2;
+    const deltaScroll = scroll - lastScroll;
 
-    if(scroll > lastScroll && !(scroll <= navBarHeight)){
-        navBar.classList.add("hidden");
-    } else {
+    if(!menuOpened){
+        if(Math.abs(deltaScroll) > 16){
+            if(deltaScroll > 0 && !(scroll <= navBarFlag)){
+                navBar.classList.add("hidden");
+            } else {
+                navBar.classList.remove("hidden");
+            }
+        }
+    }else{
         navBar.classList.remove("hidden");
     }
 }

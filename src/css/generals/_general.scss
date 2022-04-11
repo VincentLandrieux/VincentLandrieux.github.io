@@ -1,13 +1,15 @@
-@use "fonts" as *;
-@use "variables" as *;
+@use "fonts"as *;
+@use "variables"as *;
 
-*, ::before, ::after{
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: Roboto;
     font-weight: 400;
     font-size: $font-medium-mobile;
@@ -17,18 +19,19 @@ html{
     scroll-behavior: smooth;
 }
 
-a{
+a {
     text-decoration: none;
     color: $color-black;
 }
 
-h1{
+h1 {
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.2rem;
     color: $color-black;
 }
-h2{
+
+h2 {
     font-family: Spectral;
     font-size: 1.25rem;
     font-weight: 300;
@@ -36,7 +39,7 @@ h2{
     color: $color-black;
 }
 
-animate-btn{
+animate-btn {
     --first-color: #{$color-third};
     --ripple-color: #{$color-white};
     --text-color: #{$color-black};
@@ -44,17 +47,18 @@ animate-btn{
     --font-weight: 700;
 }
 
-.flag{
+.flag {
     position: absolute;
     top: -3.2rem;
 }
 
 /*---Header---*/
-header{
+header {
     position: relative;
     height: 3.2rem;
 }
-.nav-bar{
+
+.nav-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -65,58 +69,58 @@ header{
     padding: 16px $padding-mobile;
     z-index: 100;
     background-color: $color-light;
-    transition: top .4s;
+    transition: transform 0.4s;
 
-    &.hidden{
-        top: -100%;
+    &.hidden {
+        transform: translateY(-100%);
     }
 
-    &_logo{
+    &_logo {
         width: 1.6rem;
         height: 1.6rem;
     }
 
-    &_links-container:not(.mobile){
+    &_links-container:not(.mobile) {
         display: none;
     }
 
-    &_link{
+    &_link {
         margin-left: .6rem;
         transition: color .2s;
 
-        &:hover{
+        &:hover {
             color: $color-third;
         }
 
-        &.select{
+        &.select {
             text-decoration: underline;
             text-decoration-thickness: 2px;
             text-underline-offset: .4rem;
         }
     }
 
-    &_menu{
+    &_menu {
         width: 1.6rem;
         height: 1.6rem;
         background-image: url(./images/shared/menu.svg);
         background-repeat: no-repeat;
         background-size: contain;
 
-        &.opened{
+        &.opened {
             background-image: url(./images/shared/x.svg);
         }
 
-        &:not(.mobile){
+        &:not(.mobile) {
             display: none;
         }
 
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
     }
 }
 
-.nav-menu{
+.nav-menu {
     display: none;
     position: fixed;
     top: 0;
@@ -129,25 +133,25 @@ header{
     padding: $padding-mobile;
     background-color: $color-white;
 
-    &.opened{
+    &.opened {
         display: flex;
     }
 
-    &:not(.mobile){
+    &:not(.mobile) {
         display: none;
     }
 
-    &_link{
+    &_link {
         font-size: 1.25rem;
         margin: $padding-mobile 0;
         text-underline-offset: .4rem;
         transition: color .2s;
 
-        &:hover{
+        &:hover {
             color: $color-third;
         }
 
-        &.select{
+        &.select {
             text-decoration: underline;
             text-decoration-thickness: 2px;
         }
@@ -156,53 +160,54 @@ header{
 
 
 /*---Main---*/
-.hero{
+.hero {
     padding: 4rem $padding-mobile;
     background-color: $color-black;
 
-    &_title{
+    &_title {
         color: $color-white;
     }
 
-    &_subtitle{
+    &_subtitle {
         color: $color-white;
     }
 }
 
 
 /*---Footer---*/
-footer{
+footer {
     position: relative;
     background-color: $color-light;
 }
 
-.footer{
-    &_container{
+.footer {
+    &_container {
         margin-bottom: $padding-mobile * 2;
     }
 
-    &_contact{
+    &_contact {
         padding: $padding-mobile;
         background-color: $color-light;
 
-        &_info{
+        &_info {
             margin-bottom: .6rem;
 
-            &_label{
+            &_label {
                 font-size: .8rem;
                 font-weight: 300;
             }
         }
     }
 
-    &_link-container{
+    &_link-container {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         padding: 0 $padding-mobile;
     }
-    &_link{
+
+    &_link {
         width: 1.6rem;
         height: 1.6rem;
         margin: 0 .4rem;
@@ -211,7 +216,7 @@ footer{
         background-size: contain;
     }
 
-    &_legal{
+    &_legal {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -220,11 +225,11 @@ footer{
         background-color: $color-white;
         font-size: .8rem;
 
-        span{
+        span {
             font-weight: 700;
         }
 
-        &_logo{
+        &_logo {
             width: 1.4rem;
             height: 1.4rem;
             margin: .8rem;
