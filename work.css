@@ -194,6 +194,7 @@ header {
 
 /*---Main---*/
 .hero {
+  position: relative;
   padding: 4rem 32px;
   background-color: #0D0D0D;
 }
@@ -202,6 +203,16 @@ header {
 }
 .hero_subtitle {
   color: #FFFFFF;
+}
+.hero_link {
+  position: absolute;
+  width: 1.6rem;
+  height: 1.6rem;
+  background-image: var(--img-url);
+  background-repeat: no-repeat;
+  background-size: contain;
+  bottom: 32px;
+  right: 32px;
 }
 
 /*---Footer---*/
@@ -378,6 +389,10 @@ footer {
 
   .hero {
     padding: 4rem 48px;
+  }
+  .hero_link {
+    bottom: 48px;
+    right: 48px;
   }
 
   .footer_container {

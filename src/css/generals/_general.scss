@@ -1,5 +1,5 @@
-@use "fonts"as *;
-@use "variables"as *;
+@use "fonts" as *;
+@use "variables" as *;
 
 *,
 ::before,
@@ -161,6 +161,7 @@ header {
 
 /*---Main---*/
 .hero {
+    position: relative;
     padding: 4rem $padding-mobile;
     background-color: $color-black;
 
@@ -170,6 +171,17 @@ header {
 
     &_subtitle {
         color: $color-white;
+    }
+
+    &_link {
+        position: absolute;
+        width: 1.6rem;
+        height: 1.6rem;
+        background-image: var(--img-url);
+        background-repeat: no-repeat;
+        background-size: contain;
+        bottom: $padding-mobile;
+        right: $padding-mobile;
     }
 }
 

@@ -1,37 +1,42 @@
 @media (min-width: $break-mobile) {
-    .flag{
+    .flag {
         top: -4.4rem;
     }
 
-    header{
+    header {
         height: 4.4rem;
     }
 
-    .nav-bar{
+    .nav-bar {
         padding: 24px $padding-tablet;
 
-        &_logo{
+        &_logo {
             width: 2rem;
             height: 2rem;
         }
 
-        &_links-container:not(.mobile){
+        &_links-container:not(.mobile) {
             display: block;
         }
 
-        &_menu{
-            &.mobile{
+        &_menu {
+            &.mobile {
                 display: none;
             }
         }
     }
 
-    .hero{
+    .hero {
         padding: 4rem $padding-tablet;
+
+        &_link {
+            bottom: $padding-tablet;
+            right: $padding-tablet;
+        }
     }
 
-    .footer{
-        &_container{
+    .footer {
+        &_container {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -39,15 +44,15 @@
             margin-bottom: $padding-mobile;
         }
 
-        &_contact{
+        &_contact {
             padding: $padding-mobile $padding-tablet;
         }
 
-        &_link-container{
+        &_link-container {
             padding: $padding-mobile $padding-tablet;
         }
 
-        &_legal{
+        &_legal {
             flex-direction: row;
             padding: $padding-mobile $padding-tablet;
         }
@@ -55,15 +60,15 @@
 }
 
 @media (min-width: $break-tablet) {
-    html{
+    html {
         font-size: $font-medium-desktop;
     }
 
-    .flag{
+    .flag {
         top: -3.9rem;
     }
 
-    header{
+    header {
         height: 3.9rem;
     }
 }
