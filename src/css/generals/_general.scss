@@ -85,6 +85,7 @@ header {
     }
 
     &_link {
+        position: relative;
         margin-left: .6rem;
         transition: color .2s;
 
@@ -92,10 +93,33 @@ header {
             color: $color-third;
         }
 
-        &.select {
-            text-decoration: underline;
-            text-decoration-thickness: 2px;
-            text-underline-offset: .4rem;
+        // &.select {
+        //     text-decoration: underline;
+        //     text-decoration-thickness: 2px;
+        //     text-underline-offset: .4rem;
+        // }
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            width: 100%;
+            margin-top: 0.15rem;
+            height: 2px;
+            background: currentColor;
+            top: 100%;
+            left: 0;
+            pointer-events: none;
+
+            transform-origin: 100% 50%;
+            transform: scale3d(0, 1, 1);
+            transition: transform 0.2s;
+        }
+
+        &:hover::before,
+        &.select::before {
+            transform-origin: 0% 50%;
+            transform: scale3d(1, 1, 1);
         }
     }
 
@@ -142,18 +166,43 @@ header {
     }
 
     &_link {
+        position: relative;
+
         font-size: 1.25rem;
         margin: $padding-mobile 0;
-        text-underline-offset: .4rem;
         transition: color .2s;
 
         &:hover {
             color: $color-third;
         }
 
-        &.select {
-            text-decoration: underline;
-            text-decoration-thickness: 2px;
+        // &.select {
+        //     text-decoration: underline;
+        //     text-decoration-thickness: 2px;
+        //     text-underline-offset: .4rem;
+        // }
+
+        &::before {
+            content: '';
+
+            position: absolute;
+            width: 100%;
+            margin-top: 0.25rem;
+            height: 2px;
+            background: currentColor;
+            top: 100%;
+            left: 0;
+            pointer-events: none;
+
+            transform-origin: 100% 50%;
+            transform: scale3d(0, 1, 1);
+            transition: transform 0.2s;
+        }
+
+        &:hover::before,
+        &.select::before {
+            transform-origin: 0% 50%;
+            transform: scale3d(1, 1, 1);
         }
     }
 }

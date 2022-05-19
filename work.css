@@ -131,16 +131,30 @@ header {
   display: none;
 }
 .nav-bar_link {
+  position: relative;
   margin-left: 0.6rem;
   transition: color 0.2s;
 }
 .nav-bar_link:hover {
   color: #B59411;
 }
-.nav-bar_link.select {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
-  text-underline-offset: 0.4rem;
+.nav-bar_link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  margin-top: 0.15rem;
+  height: 2px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.2s;
+}
+.nav-bar_link:hover::before, .nav-bar_link.select::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
 }
 .nav-bar_menu {
   width: 1.6rem;
@@ -179,17 +193,31 @@ header {
   display: none;
 }
 .nav-menu_link {
+  position: relative;
   font-size: 1.25rem;
   margin: 32px 0;
-  text-underline-offset: 0.4rem;
   transition: color 0.2s;
 }
 .nav-menu_link:hover {
   color: #B59411;
 }
-.nav-menu_link.select {
-  text-decoration: underline;
-  text-decoration-thickness: 2px;
+.nav-menu_link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  margin-top: 0.25rem;
+  height: 2px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.2s;
+}
+.nav-menu_link:hover::before, .nav-menu_link.select::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
 }
 
 /*---Main---*/
