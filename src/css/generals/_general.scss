@@ -209,6 +209,29 @@ header {
 
 
 /*---Main---*/
+.split {
+    &-container {
+        position: relative;
+    }
+
+    &_word {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    &_whitespace {
+        display: inline-block;
+        vertical-align: top;
+    }
+
+    &_letter {
+        display: inline-block;
+        transform: translateY(100%);
+        will-change: transform;
+    }
+}
+
 .hero {
     position: relative;
     padding: 4rem $padding-mobile;

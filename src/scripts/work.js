@@ -1,12 +1,15 @@
-
 import AnimateBtn from './components/animateBtn.js';
 import nav from './components/nav.js'
+import splitting from './components/splitting.js'
 
 // Animated button
 customElements.define('animate-btn', AnimateBtn);
 
 // Nav
 nav();
+
+// Splitting
+splitting();
 
 // Parallax
 const MathUtils = {

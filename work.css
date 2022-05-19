@@ -221,6 +221,24 @@ header {
 }
 
 /*---Main---*/
+.split-container {
+  position: relative;
+}
+.split_word {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.split_whitespace {
+  display: inline-block;
+  vertical-align: top;
+}
+.split_letter {
+  display: inline-block;
+  transform: translateY(100%);
+  will-change: transform;
+}
+
 .hero {
   position: relative;
   padding: 4rem 32px;
