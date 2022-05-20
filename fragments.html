@@ -13,21 +13,26 @@
     <script src="work.js" type="module" defer></script>
 </head>
 <body>
+    <div class="board-transition animate_enter">
+        <div class="board-transition_layer"></div>
+        <div class="board-transition_layer"></div>
+    </div>
+    
     <header id="accueil">
         <nav class="nav-bar">
             <img class="nav-bar_logo" src="./images/logo.png" alt="Portfolio">
             <div class="nav-bar_links-container">
-                <a class="nav-bar_link" href="/#accueil">Accueil</a>
+                <a class="nav-bar_link" href="/#accueil" data-link-out>Accueil</a>
                 <a class="nav-bar_link select" href="/#projets">Projets</a>
-                <a class="nav-bar_link" href="/#description">A propos</a>
+                <a class="nav-bar_link" href="/#description" data-link-out>A propos</a>
                 <a class="nav-bar_link" href="#contact">Contact</a>
             </div>
             <div class="nav-bar_menu mobile"></div>
         </nav>
         <div class="nav-menu mobile">
-            <a class="nav-menu_link" href="/#accueil">Accueil</a>
+            <a class="nav-menu_link" href="/#accueil" data-link-out>Accueil</a>
             <a class="nav-menu_link select" href="/#projets">Projets</a>
-            <a class="nav-menu_link" href="/#description">A propos</a>
+            <a class="nav-menu_link" href="/#description" data-link-out>A propos</a>
             <a class="nav-menu_link" href="#contact">Contact</a>
         </div>
     </header>

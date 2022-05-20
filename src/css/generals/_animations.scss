@@ -1,0 +1,43 @@
+@keyframes transition-enter_1 {
+    40% {
+        transform: translate3d(0, 100%, 0);
+    }
+
+    100% {
+        transform: translate3d(0, 200%, 0);
+    }
+}
+
+@keyframes transition-enter_2 {
+    50% {
+        transform: translate3d(0, 100%, 0);
+    }
+
+    71%,
+    100% {
+        transform: translate3d(0, 200%, 0);
+    }
+}
+
+@keyframes transition-leave_1 {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    60% {
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+@keyframes transition-leave_2 {
+
+    0%,
+    29% {
+        transform: translate3d(0, 0%, 0);
+    }
+
+    50%,
+    100% {
+        transform: translate3d(0, 100%, 0);
+    }
+}

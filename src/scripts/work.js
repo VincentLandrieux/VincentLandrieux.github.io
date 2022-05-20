@@ -1,7 +1,10 @@
+//---IMPORT---//
 import AnimateBtn from './components/animateBtn.js';
 import nav from './components/nav.js'
 import splitting from './components/splitting.js'
+import leaveTransition from './components/transition.js'
 
+//---MAIN---//
 // Animated button
 customElements.define('animate-btn', AnimateBtn);
 
@@ -10,6 +13,9 @@ nav();
 
 // Splitting
 splitting();
+
+// Transition;
+leaveTransition();
 
 // Parallax
 const MathUtils = {

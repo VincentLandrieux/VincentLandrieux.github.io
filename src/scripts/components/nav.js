@@ -1,5 +1,8 @@
+//---VARIABLE---//
 let menuOpened = false;
 
+
+//---MAIN---//
 export default () => {
     // Nav and Menu
     const menuBtn = document.querySelector(".nav-bar_menu");

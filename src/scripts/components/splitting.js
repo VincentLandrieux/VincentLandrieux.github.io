@@ -1,4 +1,5 @@
 //---VARIABLE---//
+const TRANSITION_TIME = 1200;
 const TIME = 600;
 const DELAY = 20;
 
@@ -59,12 +60,18 @@ export default () => {
         }
     }
 
-    for (const _key in lettersEl) {
-        const options = { ...animationOptions };
-        options.delay = DELAY * _key;
-
-        lettersEl[_key].animate(KEYFRAMES, options);
-    }
+    setTimeout(
+        (_lettersEl) => {
+            for (const _key in _lettersEl) {
+                const options = { ...animationOptions };
+                options.delay = DELAY * _key;
+        
+                _lettersEl[_key].animate(KEYFRAMES, options);
+            }
+        }, 
+        TRANSITION_TIME, 
+        lettersEl
+    );
 }
 
 
