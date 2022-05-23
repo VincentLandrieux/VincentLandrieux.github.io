@@ -25,6 +25,9 @@ function onCLick(_e){
 
     setTimeout(
         (_e) => {
+            boardEl.classList.remove("animate_leave");
+            boardEl.classList.add("animate_enter");
+
             _e.target.click();
         }, 
         TRANSITION_TIME, 
