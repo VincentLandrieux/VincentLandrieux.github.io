@@ -1,11 +1,11 @@
-# Typemaster - Landing page
+# Portfolio
 
 ## Description
 
-Landing page réalisée dans le cadre d'un entrainement Frontend Mentor.
+Portfolio développeur web
+
+html, css, javascript
 
 ## Liens
 
-- [Page web](https://vincentlandrieux.github.io/typemaster/)
-
-- [Frontend Mentor](https://www.frontendmentor.io/challenges/typemaster-prelaunch-landing-page-J6-Yj5J-X)
+- [Page web]([https://vincentlandrieux.github.io/typemaster/](https://vincentlandrieux.github.io/))
